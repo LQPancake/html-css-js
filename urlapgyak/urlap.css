@@ -1,0 +1,23 @@
+header{
+    background-color: navy;
+    color: white;
+    padding: 10px;
+}
+section{
+    border: 3px solid darkcyan;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}
+h2{
+    font-variant: small-caps;
+}
+h2{
+    border-bottom: 3px solid black;
+    border-radius: 5px;
+}
+p{
+    font-size: 17px;
+}

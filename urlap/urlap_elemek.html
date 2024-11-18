@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Űrlap elemek</title>
+</head>
+<body>
+    <h2>Beviteli mezők</h2>
+    <!--Egysoros beviteli mező-->
+    <p>Szöveg <input type="text"></p>
+    <!--Több soros beviteli mezők-->
+    <p>Szöveg mező <textarea cols="48" rows="4"></textarea></p>
+    <p>Szám <input type="number"></p>
+    <p>Jelszó <input type="password"></p>
+    <p>e-mail <input type="email"></p>
+    <p>dátum <input type="date"></p>
+    <p>Idő <input type="time"></p>
+    <!--Választás értéktartományból-->
+    <p><input type="range"></p>
+    <!--Fájl tallozó-->
+    <p><input type="file"></p>
+    <!--Kiválasztó gomb (rádiógomb)-->
+    <p><input type="radio" name="Gender"> 1
+    <input type="radio" name="Gender"> 2</p>
+    <!--Jelölőnégyzet (checkbox)-->
+    <p><input type="checkbox"></p>
+    <!--Színválasztó mező-->
+    <input type="color">
+    <!--Választó elem-->
+    <p>
+        <select size="5">
+            <option>--Válassz--</option>
+            <option>Irodalom</option>
+            <option>Matek</option>
+            <option>Tesi</option>
+            <option>Fizika</option>
+        </select>
+    </p>
+    <!--Választó elem lehetőségek csoportosítva-->
+    <p>
+        <select title="Sorozatok">
+            <option disabled="disabled" selected>--Válassz--</option>
+            <optgroup label="Netflix">
+                <option>Az igazság ára</option>
+                <option>Lídia ügyvédnő</option>
+                <option>A Diplomata</option>
+            </optgroup>
+            <optgroup label="Disney+">
+                <option>Mandalorian</option>
+                <option>A Grace klinika</option>
+                <option>Mindvégig Agatha</option>
+            </optgroup>
+            <optgroup label="HBO Max">
+                <option>Trónok harca</option>
+                <option>Pingvin</option>
+                <option>Kiút</option>
+            </optgroup>
+        </select>
+    </p>
+        <!--Beviteli mezők előre definiált adatokkal-->
+        <p>
+            <input list="Programnyelvek">
+            <datalist id="Programnyelvek">
+                <option>Java</option>
+                <option>C#</option>
+                <option>C++</option>
+                <option>Python</option>
+            </datalist>
+        </p>
+        <!--Alaphelyzetbe állító gomb-->
+        <p><input type="reset"></p>
+        <!--Tetszőleges funkciójú nyomógomb-->
+        <p><input type="button" value="Feldolgozás"></p>
+</body>
+</html>
