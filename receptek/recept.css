@@ -1,0 +1,70 @@
+body{
+    background-color: white;
+}
+table{
+    width: 1900px;
+    margin: auto;
+}
+.beagy{
+    height: 420px;
+    width: 100%;
+}
+.elsooszlop{
+    width: 630px;
+}
+.masodikoszlop{
+    background-image: url(spirál.png);
+    background-repeat: repeat-y;
+    width: 126px;
+    height: 60px;
+}
+.negyedikoszlop{
+    width: 354px;
+    font-weight: bold;
+    font-size: 35px;
+    letter-spacing: 3px;
+    color: #696969;
+    padding-left: 10px;
+}
+.sor{
+    height: 140px;
+}
+ul{
+    list-style-type: circle;
+}
+.savmeret{
+    background-repeat: repeat-y;
+}
+#pizza{
+    background-image: url(pizza.jpg);
+    text-align: center;
+}
+#kenyer{
+    background-image: url(kenyer.jpg);
+    text-align: center;
+}
+.kepszoveg{
+    background-color: rgba(255, 255, 255, 0.7);
+    font-size: 40px;
+    margin-top: 330px;
+}
+#balsav{
+    background-image: url(kalaszbal.png);
+    background-repeat: repeat-y;
+    width: 300px;
+    height: 450px;
+}
+#jobbsav{
+    background-image: url(kalaszjobb.png);
+    background-repeat: repeat-y;
+    width: 300px;
+    height: 450px;
+}
+.sorkep{
+    filter: grayscale(100%);
+    height: 120px;
+    text-align: center;
+}
+#receptcim{
+    width: 100%;
+}

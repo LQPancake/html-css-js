@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+header {
+    background: #e9c6a8;
+    padding: 10px 0;
+    text-align: center;
+}
+h1 {
+    color: #333;
+}
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #e9c6a8;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.sor{
+    line-height: 25px;
+}
+img{
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 300px;
+    border: 5px solid #F0E880;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+#monkey{
+    float: right;
+    max-height: 250px;
+}
+#zoro{
+    float: right;
+    max-height: 250px;
+}
+a:link{
+    color: black;
+    text-decoration: underline;
+}
+a:hover{
+    color: black;
+    text-decoration: underline;
+}
+a:active{
+    color: black;
+    text-decoration: underline;
+}
+a:visited{
+    color: black;
+    text-decoration: underline;
+}

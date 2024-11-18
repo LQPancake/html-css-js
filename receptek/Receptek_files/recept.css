@@ -1,0 +1,32 @@
+body{
+    background-color: white;
+}
+td{
+    outline: 1px solid black;
+}
+table{
+    width: 1300px;
+    margin: auto;
+}
+.sav{
+    width: 300px;
+}
+.beagy{
+    height: 420px;
+    width: 100%;
+}
+.elsooszlop{
+    width: 630px;
+}
+.masodikoszlop{
+    width: 126px;
+}
+.negyedikoszlop{
+    width: 354px;
+}
+.sor{
+    height: 140px;
+}
+li{
+    list-style-type: circle;
+}

@@ -1,0 +1,10 @@
+pizza		https://pixabay.com/hu/photos/pizza-%C3%A9lelmiszer-olasz-s%C3%BClt-sajt-3007395/
+pizza1		https://pixabay.com/hu/photos/sajt-pizza-olasz-sz%C3%ADnes-%C3%A9lelmiszer-1869708/
+pizza2		https://pixabay.com/hu/photos/pizza-sonka-sajt-kil%C3%A1t%C3%A1s-a-tetej%C3%A9n-1949183/
+pizza3		https://pixabay.com/hu/photos/pizza-vegan-osztriga-gomba-paprika-3298685/
+kenyer		https://pixabay.com/hu/photos/keny%C3%A9r-eg%C3%A9szs%C3%A9g-sz%C3%A9nhidr%C3%A1tok-torta-587597/
+kenyer1		https://pixabay.com/hu/photos/keny%C3%A9r-%C3%A9leszt%C5%91-a-t%C3%A9szta-5896486/
+kenyer2		https://pixabay.com/hu/photos/francia-keny%C3%A9r-kenyerek-vekni-keny%C3%A9r-1433519/
+kenyer3		https://pixabay.com/hu/photos/keny%C3%A9r-tekercs-rozs-ropog%C3%B3s-k%C3%A9reg-1979676/
+kalasz		https://pixabay.com/hu/photos/b%C3%BAza-gabona-kal%C3%A1sz-mez%C5%91gazdas%C3%A1g-368867/
+receptek	https://pixabay.com/hu/photos/s%C3%BCt%C3%B6tt-%C3%A1ruk-s%C3%BClt-keny%C3%A9r-4211078/
