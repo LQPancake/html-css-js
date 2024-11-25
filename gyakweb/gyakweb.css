@@ -1,0 +1,71 @@
+body{
+    background-color: lightcyan;
+}
+header{
+    background-image: url(header_bg.png);
+}
+#linkek{
+    background-color: rgb(0, 165, 221);
+    color: white;
+    word-spacing: 25px;
+    text-indent: 20px;
+    height: 60px;
+}
+a:hover, a:visited, a:link, a:active{
+    color: white;
+    text-decoration: none;
+}
+.linkkep{
+    max-height: 30px;
+}
+#tablazat{
+    position: absolute;
+    margin-left: 700px;
+}
+footer{
+    height: 110px;
+    background-color: darkblue;
+    color: white;   
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+#copyright{
+    max-width: 50px;
+    float: right;
+}
+p{
+    font-size: 20px;
+}
+dd, dt{
+    font-size: 20px;
+}
+#nev{
+    margin-left: 80px;
+}
+#email{
+    margin-left: 24px;
+}
+#uzenet{
+    margin-left: 63px;
+}
+#submit{
+    background-color: rgb(0, 165, 221);
+    border: 0px;
+    border-radius: 10px;
+    height: 50px;
+    width: 250px;
+    color: white;
+}
+input, textarea{
+    background-color: #a5e0df;
+    border: 1px solid rgb(146, 146, 146);
+    border-radius: 3px;
+}
+input{
+    height: 25px;
+}
+#registerCenter{
+    text-align: center;
+}
