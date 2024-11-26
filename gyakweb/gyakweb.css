@@ -7,16 +7,18 @@ header{
 #linkek{
     background-color: rgb(0, 165, 221);
     color: white;
-    word-spacing: 25px;
+    word-spacing: 10px;
     text-indent: 20px;
     height: 60px;
+    width: 100%;
 }
 a:hover, a:visited, a:link, a:active{
     color: white;
     text-decoration: none;
 }
 .linkkep{
-    max-height: 30px;
+    max-height: 35px;
+    margin-top: 10px;
 }
 #tablazat{
     position: absolute;
@@ -67,5 +69,28 @@ input{
     height: 25px;
 }
 #registerCenter{
-    text-align: center;
+    text-align: center;   
+}
+#username{
+    margin-right: 120px;
+}
+#passw{
+    margin-right: 200px;
+}
+#gender{
+    margin-right: 210px;
+}
+#bday{
+    margin-right: 110px;
+}
+#userInput, #passwInput, #dateInput{
+    width: 250px;
+}
+#regSubmit{
+    background-color: rgb(0, 165, 221);
+    border: 0px;
+    border-radius: 5px;
+    height: 40px;
+    width: 85px;
+    color: white;
 }
