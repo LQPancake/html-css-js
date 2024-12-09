@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kocka</title>
+    <link rel="stylesheet" href="gyak4.css">
+</head>
+<body>
+    <header>
+        <div>
+            <label for="color">Szín:</label>
+            <input type="text" id="color" value="red" onchange="colorChanged(event)">
+        </div>
+        <div>
+            <label for="width">Szélesség (px):</label>
+            <input type="number" id="width" value="100" onchange="onWidthChanged(event)">
+        </div>
+        <div>
+            <label for="height">Magasság (px):</label>
+            <input type="number" id="height" value="100" onchange="onHeightChanged(event)">
+        </div>
+        <div>
+            <label for="border-radius">Lekerekítés:</label>
+            <input type="text" id="border-radius" value="0" onchange="onBorderRadiusChanged(event)">
+        </div>
+        <div>
+            <button id="reset" onclick="reset()">Visszaállítás</button>
+        </div>
+    </header>
+    <main onclick="onMainClick(event)">
+        <div id="box"></div>
+    </main>
+    <footer>
+        <label>Tartalom:</label>
+        <textarea id="content" onchange="onContentChanged(event)"></textarea>
+
+    </footer>
+    <script src="gyak4.js"></script>
+</body>
+</html>
