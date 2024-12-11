@@ -13,28 +13,28 @@ main{
 header{
     display: flex;
     justify-content: space-between;
-    background-color: black;
+    background-color: darkolivegreen;
     color: white;
     padding: 20px;
 }
 #box{
-    background-color: red;
+    background-color: green;
     width: 100px;
     height: 100px;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all linear 300ms;
+    transition: all linear 50ms;
 }
 #reset{
     width: 80px;
     height: 100%;
 }
 footer{
-    background-color: black;
+    background-color: darkolivegreen;
     color: white;
-    padding: 20px;
+    padding: 10px;
 }
 #content
 {

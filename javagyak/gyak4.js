@@ -16,7 +16,7 @@ function onContentChanged(event){
     box.innerHTML = event.target.value;
 }
 function onMainClick(event){
-    const translateX = event.clientX - (box.offsetLeft + box.offsetwidth / 2);
+    const translateX = event.clientX - (box.offsetLeft + box.offsetWidth / 2);
     const translateY = event.clientY - (box.offsetTop + box.offsetHeight / 2);
     box.style.transform = `translate(${translateX}px, ${translateY}px)`;
 }
