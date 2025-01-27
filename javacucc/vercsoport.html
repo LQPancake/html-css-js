@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vércsoportok</title>
+</head>
+<body>
+    <h1>A vércsoportok jellemzői</h1>
+    <ul>
+        <li id="A">A-vércsoportod úgy lehet, ha mindkét szülőtől A típust örökölsz, vagy az  egyik szülőtől A-T, a másik szülőtől pedig 0-st.</li>
+
+        <li id="B">B-vércsoportod úgy lehet, ha mindkét szülőtől B típust örökölsz, vagy az  egyik szülőtől B-T, a másik szülőtől pedig 0-st.</li>
+
+        <li id="AB">AB-vércsoportod úgy lehet,ha az egyik szülőtől A-T, a másik szülőtől pedig B-t örökölsz.</li>
+
+        <li id="0">0-s vércsoportod úgy lehet, ha mindkét szülőd vércsoportja 0-s.</li>
+    </ul>
+
+     <script>
+        let vercsoport = prompt("Milyen vércsoportod van? (A, B, 0, AB)");
+        let listaelem = document.getElementById(vercsoport);
+        listaelem.style.backgroundColor = "Yellow";
+        listaelem.style.fontWeight = "bold";
+        listaelem.style.border = "1px solid blue";
+     </script>
+</body>
+</html>
