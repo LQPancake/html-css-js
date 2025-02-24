@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="szeszi.css">
+    <title>SZESZI</title>
+</head>
+<body>
+    <header>
+        <h2 id="cim">Gyulai SzC Szigeti Endre Technikum és Szakképző Iskola</h2>
+        <p id="oldalak">
+            <a href="szeszi_rolunk.html">Rólunk</a>
+            <a href="szeszi_naptar.html">Tanévrend</a>
+            <a href="szeszi_adatok.html">Közérdekű adatok</a>
+        </p>
+    </header>
+    <p><input type="checkbox" id="darkToggle">
+        <label for="dark-mode"></label>
+    </p>
+    <script>
+        let darkToggle = document.querySelector('#darkToggle');
+
+        darkToggle.addEventListener('change', ()=> {
+        document.body.classList.toggle('dark');
+        })
+    </script>
+    <section id="tortenet">
+        <p>Az intézmény bemutatása:</p>
+
+        <p><b>Intézmény neve:</b> Gyulai Szakképzési Centrum Szigeti Endre Technikum és Szakképző Iskola (OM: 203069)</p>
+
+        <p><b>Címe:</b> 5520 Szeghalom, Ady Endre utca 3.</p>
+
+        <p><b>Típusa:</b> szakképző iskola</p>
+
+        <p><b>Tanulólétszám:</b> (2022. október 1.-i állapot szerint) 237 tanuló</p>
+        <p><b>Tanárlétszám: 19 fő</b></p>
+        <p>Az intézmény tanulói</p>
+        <p>Az intézmény tanulóinak létszáma jelenleg <b>237 fő</b>. Nagyon alacsony a helyben lakó tanulók száma, a tanulók nagy része naponta ingázik lakóhelye és az iskola között. <b>Tanulóink 4-5 %-a kollégiumi elhelyezést kért.</b> A bejárók magas száma megnehezíti a tanítás utáni programok szervezését, az aktív diákéletre való motiválhatóságot.</p>
+
+        <p>Az elmúlt években csökkenés mutatkozott a tanulói létszámban, ami a demográfiai adatok változásával magyarázható. Településünkön 15-20 év alatt az általános iskolai tanulók száma közel felére esett vissza. Hasonló adatok vannak a beiskolázási területünk településén is. Sajnos a „fogyás” ellensúlyozására tett kísérleteink következménye az lett, hogy gyengébb képességű tanulók kerültek be a rendszerbe.</p>
+
+        <p>Iskolánk tanulóinak túlnyomó többsége hátrányos helyzetű, közel fele arányban halmozottan hátrányos helyzetű. Az utóbbi néhány évben a legnagyobb kihívást a legfiatalabb évfolyam tanulóinak a programban való tartása jelenti, lemorzsolódásuk aránya magasabb, mint a felsőbb évfolyamokon. Fokozottan érvényes rájuk a szocializáció alacsony foka, a veszélyeztetettség, a motiválhatóság és a kiszámíthatóság hiánya, tanulók életéből hiányzik az otthoni jó minta, és hiányzik a kitartás.</p>
+
+        <p>Azonban a tehetséges, célorientált tanulók számára is tudunk kitörési pontokat mutatni, versenyzési, szereplési lehetőségekkel.</p>
+    </section>
+</body>
+</html>
