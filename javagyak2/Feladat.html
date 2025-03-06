@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- saved from url=(0107)https://gyszc-szeszi.neolms.eu/files/323505/forras(2).html?lmsauth=5696a48195db1b5dcd04094f0ad70143f049467e -->
+<html lang="hu"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feladat</title>
+    <style>
+        body {
+            font-family: cursive;
+            background-color: goldenrod;
+            color: beige;
+        }
+        ul {
+            width: 170px;
+            margin: auto;
+        }
+        h1, h2{
+            text-align: center;            
+        }     
+        form{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Szigeti Endre Technikum</h1>
+    <h2>11.A osztály szoftverfejlesztők</h2>
+    <main>
+        <ul id="nevsor">
+            <li>Baliga József</li>
+            <li>Feke Gergő</li>
+            <li>Gyebnár Róbert</li>
+            <li>Magyar Dárius</li>
+            <li>Mező Lívia Judit</li>
+            <li>Szabó Bence Dávid</li>
+            <li>Vida Dominik</li>
+        </ul>
+        <form>
+            <label for="bevitel">Új diák neve</label>
+            <input type="text" id="bevitel">
+            <button type="button" onclick="sorbovites()">Felvesz</button>
+            <br>
+            <button type="button" onclick="torles()">Utolsó diák törlése</button>
+        </form>
+        <script>
+            function sorbovites(){
+                const list = document.getElementById("nevsor");
+                const name = document.getElementById("bevitel");
+                const li = document.createElement("li");
+                li.innerHTML = name.value;
+                list.appendChild(li);
+                name.value = "";
+            }
+            function torles(){
+                const list = document.getElementById("nevsor");
+                if(list.lastChild){
+                    list.removeChild(list.lastChild);
+                }
+            }
+        </script>
+    </main>      
+
+</body></html>

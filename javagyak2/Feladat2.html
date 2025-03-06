@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- saved from url=(0116)https://gyszc-szeszi.neolms.eu/files/323505/nev_masodik_forras.html?lmsauth=2f6d1d24db0930c4d654eb1984cae10183367371 -->
+<html lang="hu"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feladat</title>
+</head>
+<body>
+    <h1>Szigeti Endre  Technikum</h1>
+    <h2>11.A osztály szoftverfejlesztők</h2>
+    <ul>
+        <li id="József">József</li>
+        <li id="Gergő">Gergő</li>
+        <li id="Róbert">Róbert</li>
+        <li id="Dárius">Dárius</li>
+        <li id="Lívia">Lívia</li>
+        <li id="Bence">Bence</li>
+        <li id="Dominik">Dominik</li>
+    </ul>   
+    <script>
+        const nevek = ["József", "Geri", "Robi", "Dári", "Lívia", "Bence", "Dominik"]
+        var name = prompt("Kérlek add meg a neved:")
+        var sorszam = 0;
+        for(let i = 0; i<7; i++){
+            if(name == nevek(sorszam)){
+                document.getElementById("name").style.fontWeight = "bold";
+                sorszam++;
+            }
+        }
+    </script>
+
+</body></html>
