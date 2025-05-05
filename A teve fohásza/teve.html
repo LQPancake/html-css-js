@@ -69,19 +69,22 @@ levelkévét kivilevelhevelteve.</p>
 <p id="valasz"></p>
 <script>
 function fejtoro(){
-	var teve = parseInt(document.getElementById(teveinput)).value
-	var strucc = parseInt(document.getElementById(struccinput)).value
+	var teve = document.getElementById(teveinput).value
+	var strucc = document.getElementById(struccinput).value
 	if (teve == "" || strucc == ""){
-		document.getElementById(valasz).innerText = "Hibás adat!";
+		document.getElementById("valasz").innerText = "Hibás adat!";
 	}
 	else if(teve > 5){
-		document.getElementById(valasz).innerText = "Ettől több teve van!";
+		alert("Ettől több teve van!");
 	}
 	else if(teve < 5){
-		document.getElementById(valasz).innerText = "Ettől kevesebb teve van!";
+		alert("Ettől kevesebb teve van!");
 	}
 	else if(teve == 5 && strucc == 19){
-		document.getElementById(valasz).innerText = "Helyes! 5 teve és 19 strucc";
+		document.getElementById("valasz").innerText = "Helyes! 5 teve és 19 strucc";
+		document.getElementById("valasz").style.color="orange";
+		document.getElementById("valasz").style.letterSpacing="5px";
+		document.getElementById("valasz").style.fontWeight="bold";
 	}
 }
 </script>

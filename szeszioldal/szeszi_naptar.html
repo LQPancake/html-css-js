@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="szeszi.css">
+    <title>SZESZI</title>
+</head>
+<body>
+    <header>
+        <h2 id="cim">Gyulai SzC Szigeti Endre Technikum és Szakképző Iskola</h2>
+        <p id="oldalak">
+            <a href="szeszi_rolunk.html">Rólunk</a>
+            <a href="szeszi_naptar.html">Tanévrend</a>
+            <a href="szeszi_adatok.html">Közérdekű adatok</a>
+        </p>
+    </header>
+    <p><input type="checkbox" id="darkToggle">
+        <label for="dark-mode"></label>
+    </p>
+    <script>
+        let darkToggle = document.querySelector('#darkToggle');
+
+        darkToggle.addEventListener('change', ()=> {
+        document.body.classList.toggle('dark');
+        })
+    </script>
+    <section id="naptar">
+        <h3 id="naptarcim">Tanévrend Naptár</h3>
+        <input type="date" id="naptarinput">
+    </section>
+    <footer>
+        <p class="footerszoveg">Forrás: <a href="https://szeszi.hu/rolunk/tortenet">szeszi.hu</a></p>
+        <p class="footerszoveg">Minden jog fenntartva. &copy</p>
+    </footer>
+</body>
+</html>
