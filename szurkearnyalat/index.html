@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Szürke 50 árnyalata</h1>
+    <div id='bricks'>
+
+    </div>
+    <script>
+        function createBricks(){
+            for(let i = 0; i<50; i++){
+                let rgbString= `rgb(${8 + i * 4}, ${8 + i * 4}, ${8 + i * 4})`
+                document.getElementById("bricks").innerHTML += `<div class = 'brick' style='background-color: ${rgbString}' title='${i+1}. ${rgbString}'></div>`
+            }
+        }
+        window.onload(createBricks())
+    </script>
+</body>
+</html>

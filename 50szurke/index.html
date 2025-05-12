@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Szürke színkódok</h1>
+    <p id="codes">
+        
+    </p>
+    <script>
+        function createCodos(){
+            for(let i = 0; i < 16; i++){
+                let code = "#" + i.toString(16) + i.toString(16) + i.toString(16);
+                document.getElementById("codes").innerHTML += code + " "
+            }
+        }
+        createCodos()
+    </script>
+</body>
+</html>
