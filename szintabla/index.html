@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Színtábla</title>
+</head>
+<body>
+    <h1>Színtábla</h1>
+    <div id="colortable"></div>
+
+    <script>
+        function CreateTable(){
+            for(let i = 0; i < 16; i++){
+                let G = i.toString(16);
+                for(let j = 0; j < 16; j++){
+                    let R = j.toString(16);
+                    document.getElementById('colortable').innerHTML += `
+                    <div class='square' style='background-color: #${R}${G}0'></div>`
+                }
+                document.getElementById('colortable').innerHTML += "<br>";
+            }
+        }
+
+        CreateTable();
+    </script>
+</body>
+</html>

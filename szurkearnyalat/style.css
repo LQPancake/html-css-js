@@ -1,10 +1,11 @@
 body{
     text-align: center;
 }
-.brick{
-    width: 20px;
-    height: 50px;
-    background-color: gray;
-    display: inline-block;
-    margin-right: 1px;
+.line{
+    margin: 0 auto;
+}
+.line{
+    width: 500px;
+    height: 20px;
+    margin: 0 auto;
 }

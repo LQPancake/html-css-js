@@ -8,17 +8,17 @@
 </head>
 <body>
     <h1>Szürke 50 árnyalata</h1>
-    <div id='bricks'>
+    <div id='lines'>
 
     </div>
     <script>
-        function createBricks(){
-            for(let i = 0; i<50; i++){
-                let rgbString= `rgb(${8 + i * 4}, ${8 + i * 4}, ${8 + i * 4})`
-                document.getElementById("bricks").innerHTML += `<div class = 'brick' style='background-color: ${rgbString}' title='${i+1}. ${rgbString}'></div>`
+        function createLines(){
+            for(let i = 0; i<7; i++){
+                let rgbString= `rgb(${0 + i * 0}, ${16 + i * 32}, ${0 + i * 0})`
+                document.getElementById("lines").innerHTML += `<div class = 'line' style='background-color: ${rgbString}' title='${i+1}. ${rgbString}'></div>`
             }
         }
-        window.onload(createBricks())
+        createLines()
     </script>
 </body>
 </html>
