@@ -1,0 +1,33 @@
+body{
+    background-image: url(nyomok.jpg);
+}
+table{
+    max-width: 70%;
+    margin:auto;
+}
+th{
+    background-color: yellow;
+    height: 50px;
+    
+}
+tr{
+    background-color: brown;
+}
+.elterjedes_szoveg, .megjelenes_szoveg{
+    color: white;
+    text-align: left;
+    vertical-align: top;
+}
+.cim, .felso{
+    color: yellow;
+    text-align: center;
+}
+table, td, th{
+    border: 2px solid white;
+    border-collapse: collapse;
+}
+.Alfajai{
+    background-color: yellow;
+    border: 1px solid white
+}
+

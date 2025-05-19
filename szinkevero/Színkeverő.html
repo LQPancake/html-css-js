@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Színkeverő</title>
+</head>
+<body>
+    <div id="box">
+        <h1>Színkeverő pult</h1>
+        <p>
+            R <input type="range" value="100" min="0" max="255" id="rSzam"> <span id="r">100</span> <br>
+            G <input type="range" value="150" min="0" max="255" id="gSzam"> <span id="g">150</span> <br>
+            B <input type="range" value="255" min="0" max="255" id="bSzam"> <span id="b">255</span> <br>
+            Aktuális háttérszín: <input type="text" readonly="readonly" id="aktualis_szin">
+        </p>
+    </div>
+    <script>
+        const rRange = document.getElementById('rSzam');
+        const gRange = document.getElementById('gSzam');
+        const bRange = document.getElementById('bSzam');
+        const r = document.getElementById('r');
+        const g = document.getElementById('g');
+        const b = document.getElementById('b');
+        const body = document.body;
+        const aktualisSzinInput = document.getElementById('aktualis_szin');
+
+        function SzinKeveres() {
+            const rValue = rRange.value;
+            const gValue = gRange.value;
+            const bValue = bRange.value;
+
+            r.innerText = rValue;
+            g.innerText = gValue;
+            b.innerText = bValue;
+
+            body.style.backgroundColor = `rgb(${rValue}, ${gValue}, ${bValue})`;
+
+            const hexColor = rgbToHex(rValue, gValue, bValue);
+
+            aktualisSzinInput.value = hexColor;
+        }
+
+        function rgbToHex(r, g, b) {
+            const toHex = (x) => {
+                const hex = parseInt(x).toString(16);
+                return hex.length == 1 ? '0' + hex : hex;
+            };
+            return `#${toHex(r)}${toHex(g)}${toHex(b)}`;
+        }
+
+        rRange.addEventListener('input', SzinKeveres);
+        gRange.addEventListener('input', SzinKeveres);
+        bRange.addEventListener('input', SzinKeveres);
+
+        SzinKeveres();
+    </script>
+</body>
+</html>
