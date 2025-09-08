@@ -36,13 +36,15 @@ teliLeirasok[4]="A fogyatékkal élők számára az első hivatalos snowbard ver
 teliLeirasok[5]="Az ülő jégkorongot Svédországban találták ki az 1960-as évek elején. Olyan sportolók kezdték űzni, akik korábban jégkorongoztak, de valamilyen testi sérülésüket követően nem tudták folytatni a sportot. Az első nemzetközi mérkőzést 1969-ben Stockholmban játszották, ekkor a Svéd klubok mellett egy Norvég csapat is megfordult. 1980-as évektől kezdve egyre több ország kezdett el foglalkozni a sportággal, többek között Nagy-Britani, Kanada, Egyesült Államok, valamint Japán. A sportág 1994-es téli játékokon debütált, és hamar hatalmas szurkoló táborokat mozgatott meg.";
 
 
-function sportagak(){
-    if (evszak=="nyari") {
+function sportagak(evszak) {
+    mappa = evszak;
+    if (evszak == "nyari") {
         nyarisportagak.split(',').forEach(kiir);
-    } else if(evszak=="teli") {
+    } else if (evszak == "teli") {
         telisportagak.split(',').forEach(kiir);
     }
 }
+
 
 function kiir(ertek, index, tomb){
     
@@ -54,15 +56,15 @@ function megNez(evszak,index) {
         document.getElementById('leiras').innerHTML=nyariLeirasok[index]; 
         document.getElementById('evszak').innerHTML="Nyári paralimpiai sportág"; 
         document.getElementById('sportag').innerHTML=nyarisportagak.split(',')[index];
-        document.getElementById('piktorgram').alt=nyarisportagak.split(',')[index];
-        document.getElementById('piktorgram').title=nyarisportagak.split(',')[index];
+        document.getElementById('piktogram').alt=nyarisportagak.split(',')[index];
+        document.getElementById('piktogram').title=nyarisportagak.split(',')[index];
     } else if (evszak=="teli") {
         document.getElementById('leiras').innerHTML=teliLeirasok[index]; 
         document.getElementById('evszak').innerHTML="Téli paralimpiai sportág"; 
         document.getElementById('sportag').innerHTML=telisportagak.split(',')[index];
-        document.getElementById('piktorgram').alt=telisportagak.split(',')[index];
-        document.getElementById('piktorgram').title=telisportagak.split(',')[index];
+        document.getElementById('piktogram').alt=telisportagak.split(',')[index];
+        document.getElementById('piktogram').title=telisportagak.split(',')[index];
     }
-    document.getElementById('piktorgram').src="sportagkepek/"+evszak+"/p"+index+".png";  
+    document.getElementById('piktogram').src="sportagkepek/"+evszak+"/p"+index+".png";  
     
 }
