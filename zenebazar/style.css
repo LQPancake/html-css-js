@@ -39,7 +39,7 @@ h1{
 }
 #vorosGomb{
     color: white;
-    background-color: #8B0E0E;
+    background-color: #800000;
     border: none;
     padding: 10px 15px;
 }
@@ -62,7 +62,7 @@ a{
     justify-content: space-around;
     gap: 2rem;
     padding: 6rem 1rem;
-    background-color: #8B0E0E;
+    background-color: #800000;
     color: white;
 }
 
@@ -83,21 +83,26 @@ a{
 }
 
 .feherGomb {
-    color: black;
+    color: 800000;
     background-color: white;
     border: none;
     padding: 10px 15px;
     cursor: pointer;
 }
 .container{
-    color: black;
     display: flex;
     justify-content: center;
     gap: 40px;
     padding: 1rem 1rem;
 }
+.container h1{
+    color: #800000;
+}
+#minden{
+    color: #800000;
+}
 #feherGomb{
-    color: black;
+    color: #800000;
     background-color: white;
     border: none;
     padding: 10px 15px;
@@ -124,4 +129,9 @@ header, footer {
         max-width: 90%;
     }
 }
-
+.alcim{
+    background-color: #800000;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}

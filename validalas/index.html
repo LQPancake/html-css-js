@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bejelentkezés</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login">
+    <h1>Bejelentkezés</h1>
+    <label for="name">Név:</label>
+    <input type="text" id="name">
+    <p id="nameError" class="error"></p>
+    <label for="age">Kor:</label>
+    <input type="number" id="age">
+    <p id="ageError" class="error"></p>
+    <label>
+      <input type="checkbox" id="terms"> Elfogadtam a felhasználói szabályzatot
+    </label>
+    <p id="termsError" class="error"></p>
+
+    <button id="submitBtn">Elküldés</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
