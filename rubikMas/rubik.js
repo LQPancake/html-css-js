@@ -6,10 +6,12 @@ const cimkep = document.getElementById('cimkep');
   cimkep.onmouseout = function (){
     cimkep.src = "sematikus.png";}
 // 2.    
-var erdekessegek = document.getElementsByClassName('erdekesseg');
-    erdekessegek.onclick = function(){
-    erdekessegek.classList.add("nagyobb")
+const erdekessegek = document.querySelectorAll('.erdekesseg');
+for (const erdekesseg of erdekessegek){
+    erdekesseg.onclick = function(event){
+      erdekesseg.classList.toggle('nagyobb');
     }
+}
 // 3.
 const szul_ev=document.getElementById('szul_ev').value;
 szul_ev.onsubmit=function(event){
