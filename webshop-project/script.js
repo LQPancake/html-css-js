@@ -32,8 +32,14 @@ function renderProducts() {
 window.onload = renderProducts;
 document.getElementById('create-product').onsubmit =  (event) => {
     event.preventDefault();
-    console.log(event.target.elements.price.name.value);
-    console.log(event.target.elements.price.name.value);
-    console.log(event.target.elements.price.isInStock);
+    const name = event.target.elements.name.value;
+    const price = event.target.elements.price.value;
+    const isInStock = event.target.elements.isInStock.checked;
+    state.products.push({
+        name,
+        price,
+        isInStock
+    });
 
+    renderProducts();
 }

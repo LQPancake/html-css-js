@@ -1,0 +1,73 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #1a0066;
+    color: white;
+    padding: 1px;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1a0066;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: underline;
+}
+h1{
+    margin-left: 40px;
+}
+#bevitelMezo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 15%;
+    width: 100%;
+}
+#bevitelMezo input{
+    width: 200px;
+    padding: 8px;
+    height: 40px;
+}
+#bevitelMezo button{
+    padding: 8px 16px;
+    cursor: pointer;
+    align-self: center;
+    width: 200px;
+    height: 40px;
+}
+#bevitelMezo label {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+#bevitelMezo input[type="checkbox"] {
+    margin: 0;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+#termekMezo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 20%;
+}
+#termekMezo img{
+    max-height: 120px;
+    border: 2px solid #1a0066;
+    border-radius: 10px;
+}
