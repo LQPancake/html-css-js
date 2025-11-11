@@ -45,12 +45,12 @@ function render() {
     productHtml = '<div class="row">';
     for (const product of state.products) {
         productHtml += `
-        <divv class="clo-md 4 mb 4">
+        <div class="col-md-4 mb-4">
          <div class="card">
                     <img src="${product.keplink}" alt="">
                     <h3> ${product.name}</h3>
                     <p>${product.price}</p>
-                    <p id="akcio">Akciós ár: 18080Ft</p>    
+                    <p id="akcio">Akciós ár: ${product.price}</p>    
                 </div>
             </div>`
             }
@@ -58,11 +58,11 @@ function render() {
             products.innerHTML = productHtml;
         }
 window.onload = render;
-/*document.getElementById(newProduct).onsubmit=function(e){
+document.getElementById("newProduct").onsubmit=function(e){
     e.preventDefault();
     let name =e.target.elements.name.value;
     let price =e.target.elements.price.value;
     let keplink =e.target.elements.keplink.value;
-    state.product.push({name:name, price:price, keplink:keplink});
+    state.products.push({name:name, price:price, keplink:keplink});
 render();
-};*/
+};
