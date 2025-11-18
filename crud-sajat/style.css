@@ -1,3 +1,6 @@
+*{
+    color: white;
+}
 body{
     background-color: #1B2838;
     color: white;
@@ -17,6 +20,35 @@ header{
     font-size: 10px;
     font-family: sans-serif;
 }
-.container{
+.card{
+    background-color: #171a219a;
+    color: white;
+    border-radius: 0;
+    padding: 10px;
+    margin-top: 15%;
+}
+.card p, h3{
+    text-align: center;
+}
+.card p, h3{
+    font-size: 20px;
+}
+.card h3{
+    font-weight: bold;
+}
+#create-product{
     display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #171a219a;
+    color: black;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 0px;
+}
+input, button{
+    background-color: #213A4C;
+    color: white;
+    border: 0;
 }
