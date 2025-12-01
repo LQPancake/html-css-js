@@ -18,7 +18,18 @@ let state = {
             price: 5550,
             isInStock: false
         }
-    ]
+    ],
+    editedId: ""
+}
+    function renderEditProduct(){
+        let foundProduct;
+        for(const product of state.products){
+            if(product id === state.editedId){
+                foundProduct = product;
+                break;
+            }
+        }
+    }
 }
 function renderProducts() {
     var productsHTML = '';
@@ -28,10 +39,17 @@ function renderProducts() {
             <p>${product.name}</p>
             <p>${product.price}</p>
             <button class="btn btn-danger float-right delete-product" data-productid="${product.id}">Törlés</button>
+            <button class="btn btn-warning float-right edit-product" data-productid="${product.id}">Szerkesztés</button>
         </div>
         `
     }
     document.getElementById('product-list-component').innerHTML = productsHTML;
+    for(const editBtn of document.querySelectorAll(".edit-product")){
+        editBtn.onclick = function(event){
+            let id = event.target.dataset.productid;
+            state.editedId = id;
+        }
+    }
     for (const deleteBtn of document.querySelectorAll(".delete-product")){
         deleteBtn.onclick = function(event){
         let id = event.target.dataset.productid;
