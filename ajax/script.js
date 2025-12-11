@@ -1,5 +1,12 @@
 document.getElementById("fetch-posts").onclick = function() {
     fetch("https://jsonplaceholder.typicode.com/posts")
-    .then(response => JSON.parse(response))
-    .then((data)=>console.log(data));
+    .then(response => response.json())
+    .then((data)=>{
+        let posts = data;
+        let postListHtml = ""
+        for (const post of posts){
+            postListHtml += `<p>${post.title}</p>`
+        }
+        document.getElementById("post-list-container").innerHTML=""
+    })
 }

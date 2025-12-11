@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Regisztrációs felület</title>
+</head>
+<body>
+    <h1>Regisztrációs felület</h1>
+    <form>
+        <div class="container">
+            <input type="text" name="Név" id="name" placeholder="Teljes név">
+            <input type="radio" name="gender" class="gender" value="male"> Férfi
+            <input type="radio" name="gender" class="gender" value="female"> Nő
+            <input type="date" name="Születési dátum" id="birthDate"> Születési dátum
+            <input type="text" name="Ország" class="residence" placeholder="Ország">
+            <input type="text" name="Város" class="residence" placeholder="Város">
+            <input type="email" name="Email" id="email" placeholder="E-Mail">
+            <input type="tel" name="TelSzám" id="phoneNumber" placeholder="Telefonszám">
+            <input type="text" name="Felhasználónév" id="username" placeholder="Választott felhasználónév">
+            <input type="password" name="Jelszó" id="password" placeholder="Választott belépési jelszó">
+            <input type="file" name="Profilkép">
+            <img id="profilePicture" alt="Profilkép" width="150">
+            <button type="submit">Regisztráció</button>
+            <button id="testData">Tesztadatok használata</button>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
