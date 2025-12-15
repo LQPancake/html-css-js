@@ -1,11 +1,24 @@
-document.getElementById("testData").addEventListener("click", async (e) => {
-    e.preventDefault();
+const API_URL = "https://randomuser.me/api/?results=6&nat=hu&seed=ceges_csapat";
 
-    const response = await fetch("https://randomuser.me/api/");
-    const data = await response.json();
-    const u = data.results[0];
+const teamContainer = document.getElementById("team");
 
-    document.getElementById("name").value = `${u.name.title} ${u.name.first} ${u.name.last}`;
-    document.getElementById("email").value = u.email;
-    document.getElementById("profilePicture").src = u.picture.large;
-});
+fetch(API_URL)
+  .then(response => response.json())
+  .then(data => {
+    data.results.forEach(person => {
+      const card = document.createElement("div");
+      card.className = "card";
+
+      card.innerHTML = `
+        <img src="${person.picture.large}" alt="profilkép">
+        <h3>${person.name.first} ${person.name.last}</h3>
+        <p>${person.email}</p>
+        <p>${person.location.city}</p>
+      `;
+
+      teamContainer.appendChild(card);
+    });
+  })
+  .catch(error => {
+    console.error("Hiba történt:", error);
+  });
