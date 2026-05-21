@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap');
+
+header{
+    height: 400px;
+    background-image: url(../img/balaton_bg.jpg);
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    background-color: #06435f !important;
+}
+nav a:active{
+    background-color: rgba(255, 255, 255, .2);
+}
+h1, h2, footer, header{
+    font-family: "Marhey", sans-serif;
+    color: white;
+}
+h2{
+    font-variant: small-caps;
+    text-decoration: underline wavy;
+    color: #06435f;
+}
+main{
+    width: 80%;
+    margin: 0 auto;
+}
+h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 5px 5px 10px black;
+}
+@media screen and (max-width: 992px){
+    h1{
+        font-size: 1.5rem;
+    }
+}
+table{
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 1px 1px 10px;
+}
+table thead tr:first-child{
+    background-color: #1283b9;
+}
+table thead tr:nth-child(2){
+    background-color: black;
+}
+table thead tr th{
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+table tbody tr td{
+    background-color:  rgba(173, 216, 230, 0.9);
+}
+table tbody tr td:hover{
+    background-color:  rgba(173, 216, 230, 0.7);
+}
+table tbody tr td:first-child{
+    font-variant: small-caps;
+    font-weight: bold;
+    width: 25%;
+}
+table tr{
+    border-bottom: 1px solid #06435f;
+}
+
+#galeria{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+#galeria img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
+#galeria img:hover{
+    filter: grayscale(0);
+    transform: scale(1.04);
+    cursor:pointer;
+}
+#galeria .big{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.lake{
+    box-shadow: 1px 1px 3px #06435f;
+}

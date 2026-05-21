@@ -4,7 +4,7 @@ async function szamol() {
     const eredmenyDiv = document.getElementById("eredmeny");
 
     if (!coord1 || !coord2) {
-        eredmenyDiv.innerHTML = "Adj meg mindkét koordinátát!";
+        eredmenyDiv.innerHTML = "Add meg mindkét koordinátát!";
         return;
     }
 
