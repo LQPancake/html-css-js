@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="hu" class="scroll-smooth">
+<html lang="hu" class="scroll-smooth dark">
 
 <head>
   <meta charset="UTF-8" />
@@ -16,25 +16,28 @@
     <div class="max-w-7xl mx-auto px-8">
       <div class="flex justify-between h-16">
         <div class="flex items-center">
-          <a href="#" class="flex items-center gap-2 text-2xl font-bold text-tura-green-700">
+          <a href="#" class="flex items-center gap-2 text-2xl font-bold text-tura-green-700 dark:text-tura-green-100">
             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M12 21l-8-11.5a1 1 0 01.8-1.5H7l2-4 2 4h2l2-4 2 4h1.2a1 1 0 01.8 1.5L12 21z"></path>
             </svg>
-            <span>Vadon<span class="text-tura-brown-800">Szava</span></span>
-          </a>
+                <span>Vadon<span class="text-tura-brown-800 dark:text-tura-brown-200">Szava</span></span>
+            </a>
         </div>
 
         <div class="flex items-center space-x-6">
-          <a href="#kezdolap" class="text-gray-600 font-medium">Kezdőlap</a>
-          <a href="#utvonalak" class="text-gray-600 font-medium">Útvonalak</a>
-          <a href="#felszereles" class="text-gray-600 font-medium">Felszerelés</a>
-          <a href="#galeria" class="text-gray-600 font-medium ">Galéria</a>
-          <a href="#rolam" class="px-4 py-2 bg-tura-brown-800 text-white rounded-full">Rólam</a>
+          <a href="#kezdolap" class="text-gray-600 dark:text-gray-100 hover:text-tura-green-600 dark:hover:text-tura-green-100 transition font-medium">Kezdőlap</a>
+          <a href="#utvonalak" class="px-10 py-4 bg-tura-green-600 text-white font-semibold rounded-lg text-lg shadow-lg hover:bg-tura-green-700 transition duration-300">
+              Fedezz fel útvonalakat
+          </a>
+          <a href="#felszereles" class="text-gray-600 dark:text-gray-100 hover:text-tura-green-600 dark:hover:text-tura-green-100 transition font-medium">Felszerelés</a>
+          <a href="#galeria" class="text-gray-600 dark:text-gray-100 hover:text-tura-green-600 dark:hover:text-tura-green-100 transition font-medium ">Galéria</a>
+          <a href="#rolam" class="px-4 py-2 bg-tura-brown-800 dark:bg-green-600 hover:bg-tura-brown-900 dark:hover:bg-tura-green-700 transition text-white rounded-full ">Rólam</a>
         </div>
       </div>
     </div>
   </nav>
+
   <section id="kezdolap" class="relative h-screen flex items-center justify-center bg-cover bg-center"
     style="background-image: url('public/banner.jpg');">
     <div class="absolute inset-0 bg-black/50"></div>
@@ -51,10 +54,9 @@
       <div class="flex flex-row gap-6 justify-center">
         <a href="#utvonalak" class="px-10 py-4 bg-tura-green-600 text-white font-semibold rounded-lg text-lg shadow-lg">
           Fedezz fel útvonalakat
-        </a>
         <a href="#felszereles"
-          class="px-10 py-4 bg-white/10  text-white border border-white/30 font-semibold rounded-lg text-lg">
-          Mire van szükséged?
+            class="px-10 py-4 bg-white/10 text-white border border-white/30 font-semibold rounded-lg text-lg hover:bg-white/20 backdrop-blur-sm transition duration-300">
+            Mire van szükséged?
         </a>
       </div>
     </div>
@@ -66,42 +68,39 @@
         <p class="text-lg text-text max-w-2xl mx-auto">Több mint testmozgás. A természetben töltött idő megváltoztatja a
           gondolkodásodat.</p>
         <div class="grid md:grid-cols-3 gap-10">
-          <div class="bg-white p-8 rounded-2xl shadow-xl border border-border text-center">
-            <div
-              class="w-16 h-16 bg-tura-green-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white">
+          <div class="bg-white dark:bg-tura-green-700/50 p-8 rounded-2xl shadow-xl border border-border text-center transform hover:-translate-y-2 transition duration-300">
+            <div class="w-16 h-16 bg-tura-green-600 dark:bg-tura-brown-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white">
               <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
                 </path>
               </svg>
             </div>
-            <h3 class="text-2xl font-semibold text-tura-brown-900 mb-3">Mentális feltöltődés</h3>
+            <h3 class="text-2xl font-semibold text-tura-brown-900 dark:text-tura-brown-100 mb-3">Mentális feltöltődés</h3>
             <p class="text-text">A fák között a stressz szintje bizonyítottan csökken. Csend, nyugalom és tiszta
               gondolatok.</p>
           </div>
-          <div class="bg-white p-8 rounded-2xl shadow-xl border border-border text-center">
-            <div
-              class="w-16 h-16 bg-tura-green-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white">
+          <div class="bg-white dark:bg-tura-green-700/50 p-8 rounded-2xl shadow-xl border border-border text-center transform hover:-translate-y-2 transition duration-300">
+            <div class="w-16 h-16 bg-tura-green-600 dark:bg-tura-brown-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white">
               <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z">
                 </path>
               </svg>
             </div>
-            <h3 class="text-2xl font-semibold text-tura-brown-900 mb-3">Fizikai erőnlét</h3>
+            <h3 class="text-2xl font-semibold text-tura-brown-900 dark:text-tura-brown-100 mb-3">Fizikai erőnlét</h3>
             <p class="text-text">Erősíti a szívet, a lábakat, és növeli az állóképességet, miközben észre sem veszed a
               megerőltetést.</p>
           </div>
 
-          <div class="bg-white p-8 rounded-2xl shadow-xl border border-border text-center">
-            <div
-              class="w-16 h-16 bg-tura-green-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white">
+          <div class="bg-white dark:bg-tura-green-700/50 p-8 rounded-2xl shadow-xl border border-border text-center">
+            <div class="w-16 h-16 bg-tura-green-600 dark:bg-tura-brown-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white">
               <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 002 2h1a2.5 2.5 0 002.5-2.5V4a2 2 0 00-2-2h-1.036">
                 </path>
               </svg>
             </div>
-            <h3 class="text-2xl font-semibold text-tura-brown-900 mb-3">Új felfedezések</h3>
+            <h3 class="text-2xl font-semibold text-tura-brown-900 dark:text-tura-brown-100 mb-3">Új felfedezések</h3>
             <p class="text-text">Rejtett vízesések, lélegzetelállító panorámák és olyan helyek, ahová autóval sosem
               jutnál el.</p>
           </div>
@@ -116,12 +115,12 @@
             </a>
           </div>
           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-card-bg rounded-2xl overflow-hidden shadow-lg border border-card-border">
-              <img src="public/istallosko.jpg" alt="Istállós-kő" class="w-full h-64 object-cover">
+            <div class="bg-card-bg rounded-2xl overflow-hidden shadow-lg border border-card-border group">
+              <img src="public/istallosko.jpg" alt="Istállós-kő" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105 ">
               <div class="p-6">
                 <div class="flex gap-2 mb-3">
                   <span class="px-3 py-1 bg-tag-bg text-tag-text rounded-full text-xs font-medium">Istállós-kő</span>
-                  <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full text-xs font-medium">Nehéz</span>
+                  <span class="px-3 py-1 bg-red-100 dark:bg-red-800 text-red-700 dark:text-red-200 rounded-full text-xs font-medium">Nehéz</span>
                 </div>
                 <h3 class="text-xl font-semibold text-heading mb-2">Pillantás a múltba a Szalajka-völgy körül</h3>
                 <p class="text-text mb-4 line-clamp-2">A Bükk-hegység jellegzetes szeletét járjuk be a legnépszerűbb
@@ -134,12 +133,12 @@
               </div>
             </div>
 
-            <div class="bg-card-bg rounded-2xl overflow-hidden shadow-lg border border-card-border">
-              <img src="public/kekesteto.jpg" alt="Kékes-tető" class="w-full h-64 object-cover">
+            <div class="bg-card-bg rounded-2xl overflow-hidden shadow-lg border border-card-border group">
+              <img src="public/kekesteto.jpg" alt="Kékes-tető" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
               <div class="p-6">
                 <div class="flex gap-2 mb-3">
                   <span class="px-3 py-1 bg-tag-bg text-tag-text rounded-full text-xs font-medium">Kékes-tető</span>
-                  <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium">Könnyű</span>
+                  <span class="px-3 py-1 bg-blue-100 dark:bg-blue-800 text-blue-700 dark:text-blue-200 rounded-full text-xs font-medium">Könnyű</span>
                 </div>
                 <h3 class="text-xl font-semibold text-heading mb-2">A Kékes északi oldalának vadonjában</h3>
                 <p class="text-text mb-4 line-clamp-2">A könnyed kiránduláson belevetjük magunkat a hegy északi
@@ -153,12 +152,12 @@
               </div>
             </div>
 
-            <div class="bg-card-bg rounded-2xl overflow-hidden shadow-lg border border-card-border">
-              <img src="public/nagymilic.jpg" alt="Nagy-Milic" class="w-full h-64 object-cover">
+            <div class="bg-card-bg rounded-2xl overflow-hidden shadow-lg border border-card-border group">
+              <img src="public/nagymilic.jpg" alt="Nagy-Milic" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
               <div class="p-6">
                 <div class="flex gap-2 mb-3">
                   <span class="px-3 py-1 bg-tag-bg text-tag-text rounded-full text-xs font-medium">Nagy-Milic</span>
-                  <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full text-xs font-medium">Nehéz</span>
+                  <span class="px-3 py-1 bg-red-100 dark:bg-red-800 text-red-700 dark:text-red-200 rounded-full text-xs font-medium">Nehéz</span>
                 </div>
                 <h3 class="text-xl font-semibold text-heading mb-2">A Milic vadregényes, keleti peremén</h3>
                 <p class="text-text mb-4 line-clamp-2">A Milic tömbjének legvadabb, sziklákkal tarkított keleti oldalát
@@ -175,7 +174,7 @@
     </div>
   </section>
   </section>
-  <section id="felszereles" class="py-24 bg-tura-brown-900 text-white relative overflow-hidden">
+  <section id="felszereles" class="py-24 bg-tura-brown-900 dark:bg-tura-green-900 text-white relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
       <div class="text-center mb-16">
         <h2 class="text-4xl font-bold mb-4">A biztonságos túrázás alapjai</h2>
@@ -183,7 +182,7 @@
           legfontosabb dolog, ami mindig legyen nálad.</p>
       </div>
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-center">
-        <div class="bg-white/10 p-6 rounded-xl border border-white/20">
+        <div class="bg-white/10 p-6 rounded-xl border border-white/20 backdrop-blur-sm">
           <div
             class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 text-tura-brown-900">
             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -195,7 +194,7 @@
           <p class="text-xs text-tura-brown-100">Vízálló, bokatartó.</p>
         </div>
 
-        <div class="bg-white/10 p-6 rounded-xl border border-white/20">
+        <div class="bg-white/10 p-6 rounded-xl border border-white/20 backdrop-blur-sm">
           <div
             class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 text-tura-brown-900">
             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -208,7 +207,7 @@
           <p class="text-xs text-tura-brown-100">Műszálas, nem pamut.</p>
         </div>
 
-        <div class="bg-white/10 p-6 rounded-xl border border-white/20">
+        <div class="bg-white/10 p-6 rounded-xl border border-white/20 backdrop-blur-sm">
           <div
             class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 text-tura-brown-900">
             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -233,9 +232,9 @@
           <p class="text-xs text-tura-brown-100">Kötszer, fájdalomcsillapító.</p>
         </div>
 
-        <div class="bg-white/10 p-6 rounded-xl border border-white/20">
+        <div class="bg-white/10 p-6 rounded-xl border border-white/20 backdrop-blur-sm">
           <div
-            class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 text-tura-brown-900">
+            class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 text-tura-brown-900 ">
             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a2 2 0 00-1.96 1.414l-.76 2.28a2 2 0 001.18 2.444l2.247.949a2 2 0 002.439-1.118l.261-.705a2 2 0 00-.036-1.583l-1.962-4.664z">
@@ -256,7 +255,7 @@
       </div>
     </div>
   </section>
-  <section id="rolam" class="py-24 bg-tura-green-100">
+  <section id="rolam" class="py-20 bg-tura-green-100 dark:bg-black">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="grid md:grid-cols-2 gap-16 items-center">
         <div>
@@ -264,7 +263,7 @@
             class="rounded-2xl shadow-2xl w-full h-auto object-cover aspect-square">
         </div>
         <div>
-          <span class="text-tura-green-600 font-semibold mb-2 block">A történetem</span>
+          <span class="text-tura-green-600 dark:text-tura-green-100 font-semibold mb-2 block">A történetem</span>
           <h2 class="text-4xl font-bold text-heading mb-6">Szia, a hegyek szerelmese vagyok.</h2>
           <p class="text-lg text-text mb-6 leading-relaxed">
             Tíz éve kezdődött minden, amikor egy nehéz munkahét után véletlenül kötöttem ki a Pilisben.
@@ -275,7 +274,7 @@
             Célom, hogy inspiráljalak, és megmutassam: a túrázás nem csak a profiké, hanem bárkié, aki
             tiszteli a természetet és szereti a szabadságot.
           </p>
-          <a href="mailto:info@vadonszava.hu" class="px-8 py-3 bg-tura-green-600 text-white font-semibold rounded-lg">
+          <a href="mailto:info@vadonszava.hu" class="px-8 py-3 bg-tura-green-600 dark:bg-tura-brown-600 text-white font-semibold rounded-lg hover:bg-tura-green-700 dark:hover:bg-tura-brown-600/60 transition duration-300">
             Lépj kapcsolatba
           </a>
         </div>
@@ -286,12 +285,12 @@
     <div class="max-w-5xl mx-auto px-6 text-center">
       <h2 class="text-4xl font-bold text-white mb-6">Túráim képekben...</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <img src="public/gallery/gallery01.jpg" class="border border-white object-cover h-full" alt="Túrafotó 1">
-        <img src="public/gallery/gallery02.jpg" class="border border-white object-cover h-full" alt="Túrafotó 2">
-        <img src="public/gallery/gallery03.jpg" class="border border-white object-cover h-full" alt="Túrafotó 3">
+        <img src="public/gallery/gallery01.jpg" class="border border-white object-cover h-full dark:border-tura-green-700 sepia-100 scale-100 hover:sepia-0 hover:scale-105 hover:z-10 transition-all duration-1000" alt="Túrafotó 1">
+        <img src="public/gallery/gallery02.jpg" class="border border-white object-cover h-full dark:border-tura-green-700 sepia-100 scale-100 hover:sepia-0 hover:scale-105 hover:z-10 transition-all duration-1000" alt="Túrafotó 2">
+        <img src="public/gallery/gallery03.jpg" class="border border-white object-cover h-full dark:border-tura-green-700 sepia-100 scale-100 hover:sepia-0 hover:scale-105 hover:z-10 transition-all duration-1000" alt="Túrafotó 3">
         <img src="public/gallery/gallery04.jpg"
-          class="border border-white object-cover h-full w-full row-start-1 row-end-3" alt="Túrafotó 4">
-        <img src="public/gallery/gallery05.jpg" class="border border-white object-cover h-full" alt="Túrafotó 5">
+          class="border border-white object-cover h-full w-full row-start-1 row-end-3 dark:border-tura-green-700 sepia-100 scale-100 hover:sepia-0 hover:scale-105 hover:z-10 transition-all duration-1000" alt="Túrafotó 4">
+        <img src="public/gallery/gallery05.jpg" class="border border-white object-cover h-full dark:border-tura-green-700 sepia-100 scale-100 hover:sepia-0 hover:scale-105 hover:z-10 transition-all duration-1000" alt="Túrafotó 5">
       </div>
     </div>
   </section>
@@ -302,15 +301,15 @@
   <footer class="py-12 px-8 bg-nav-bg border-t border-border text-text">
     <div class="max-w-7xl mx-auto flex justify-between">
       <div>
-        <a href="#" class="text-lg font-bold text-tura-green-700">
-          <span>Vadon<span class="text-tura-brown-800">Szava</span></span>
+         <a href="#" class="text-lg font-bold text-tura-green-700 dark:text-tura-green-100">
+            <span>Vadon<span class="text-tura-brown-800 dark:text-tura-brown-200">Szava</span></span>
         </a>
-        <a href="#" class="text-sm mx-1">Facebook</a>
-        <a href="#" class="text-sm mx-1">Instagram</a>
-        <a href="#" class="text-sm mx-1">Strava</a>
+        <a href="#" class="text-sm mx-1 hover:text-tura-green-600 dark:hover:text-tura-green-100">Facebook</a>
+        <a href="#" class="text-sm mx-1 hover:text-tura-green-600 dark:hover:text-tura-green-100">Instagram</a>
+        <a href="#" class="text-sm mx-1 hover:text-tura-green-600 dark:hover:text-tura-green-100">Strava</a>
       </div>
       <div>
-        <button id="themeSystemBtn" class="px-2 py-2 mt-2 rounded-md bg-gray-200">
+        <button id="themeSystemBtn" class="px-2 py-2 mt-2 rounded-2xl bg-gray-200 dark:bg-black cursor-pointer">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
             class="lucide lucide-monitor-cog" aria-hidden="true">
@@ -328,7 +327,7 @@
             <circle cx="18" cy="6" r="3"></circle>
           </svg>
         </button>
-        <button id="themeLightBtn" class="px-2 py-2 mt-2 rounded-md bg-gray-200">
+        <button id="themeLightBtn" class="px-2 py-2 mt-2 rounded-2xl bg-gray-200 dark:bg-black cursor-pointer">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
             class="lucide lucide-sun" aria-hidden="true">
@@ -343,7 +342,7 @@
             <path d="m19.07 4.93-1.41 1.41"></path>
           </svg>
         </button>
-        <button id="themeDarkBtn" class="px-2 py-2 mt-2 rounded-md bg-gray-200">
+        <button id="themeDarkBtn" class="px-2 py-2 mt-2 rounded-2xl bg-gray-200 dark:bg-black cursor-pointer">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
             class="lucide lucide-moon" aria-hidden="true">

@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {  
   --color-tura-green-100: #dceecd;
@@ -39,4 +40,16 @@
   --color-card-border: var(--color-card-border);
   --color-tag-bg:      var(--color-tag-bg);
   --color-tag-text:    var(--color-tag-text);
+}
+.dark {
+  --color-bg:          black;
+  --color-bg-tinted:   var(--color-tura-green-900);
+  --color-nav-bg:      var(--color-tura-green-900);
+  --color-card-bg:     var(--color-tura-brown-900);
+  --color-heading:     var(--color-tura-brown-200);
+  --color-text:        var(--color-gray-200);
+  --color-border:      var(--color-tura-green-600);
+  --color-card-border: var(--color-tura-brown-600);
+  --color-tag-bg:      var(--color-tura-green-700);
+  --color-tag-text:    var(--color-tura-green-100);
 }
