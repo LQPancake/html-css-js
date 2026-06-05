@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>alaptailwind</title>
+  </head>
+  <body>
+    <div class="min-h-screen flex items-center justify-center bg-gray-100">
+  <div class="bg-white p-8 rounded-xl shadow-md w-full max-w-sm">
+    <form class="space-y-4">
+      <input
+        type="email"
+        placeholder="Email"
+        class="w-full border border-gray-300 rounded-lg p-2">
+      <input
+        type="password"
+        placeholder="Jelszó"
+        class="w-full border border-gray-300 rounded-lg p-2">
+      <button
+        type="submit"
+        class="w-full bg-green-600 text-white py-2 rounded-lg">
+        Bejelentkezés
+      </button>
+    </form>
+  </div>
+</div>
+  <nav class="flex justify-between items-center bg-gray-900 text-white px-6 py-4">
+  <span class="text-white">MySite</span>
+  <ul class="flex gap-6 list-none">
+    <li><a href="#" class="underline">Főoldal</a></li>
+    <li><a href="#">Rólunk</a></li>
+    <li><a href="#">Kapcsolat</a></li>
+  </ul>
+  </nav>
+    <div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+  <!-- kartya 1 -->
+  <div class="flex flex-col bg-white rounded-xl shadow p-4">
+    <img src="img/taska1.jfif" alt="Termék 1" class="w-full object-cover aspect-video rounded-lg"/>
+
+    <h3 class="mt-4 text-lg font-semibold">Termék 1</h3>
+
+    <p class="mt-2 text-gray-600">9 990 Ft</p>
+
+    <button class="mt-auto bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">Kosárba</button>
+  </div>
+
+  <!-- kartya 2 -->
+  <div class="flex flex-col bg-white rounded-xl shadow p-4">
+    <img src="img/taska2.jfif" alt="Termék 2" class="w-full object-cover aspect-video rounded-lg"/>
+
+    <h3 class="mt-4 text-lg font-semibold">Termék 2</h3>
+
+    <p class="mt-2 text-gray-600">14 990 Ft</p>
+
+    <button class="mt-auto bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">Kosárba</button>
+    </div>
+
+  <!-- kartya 3 -->
+  <div class="flex flex-col bg-white rounded-xl shadow p-4">
+    <img src="img/taska3.jfif" alt="Termék 3" class="w-full object-cover aspect-video rounded-lg"/>
+
+    <h3 class="mt-4 text-lg font-semibold">Termék 3</h3>
+
+    <p class="mt-2 text-gray-600">19 990 Ft</p>
+
+    <button class="mt-auto bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">
+      Kosárba
+    </button>
+  </div>
+
+</div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
