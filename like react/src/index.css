@@ -1,0 +1,7 @@
+body{
+    background: #000000;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(47, 168, 20, 1) 47%, rgba(0, 0, 0, 1) 100%);
+}
+h2, h1, p{
+    color: white;
+}
