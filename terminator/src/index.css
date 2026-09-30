@@ -1,0 +1,10 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #000000;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(21, 79, 9, 1) 47%, rgba(0, 0, 0, 1) 100%);
+}
+h1{
+    color: white;
+}
