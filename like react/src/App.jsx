@@ -1,14 +1,44 @@
 import Kartya from "./components/Kartya.jsx"
 
-function App(){
-  return(
-    <div className="kartya">
+const favorites = [
+  {
+    id: 1,
+    emoji: "🐝",
+    cim: "Meh",
+    leiras: "aha ja"
+  },
+  {
+    id: 2,
+    emoji: "🐱",
+    cim:"ciro",
+    leiras: "jaaaj"
+  },
+  {
+    id: 3,
+    emoji: "🐶",
+    cim:"ubul",
+    leiras: "hhhhhhhh"
+  },
+  {
+    id: 4,
+    emoji: "🐨",
+    cim:"koala",
+    leiras: "mmmmmmmmmm"
+  }
+]
+
+function App() {
+  return (
+    <>
       <h1>Kártyák</h1>
-      <Kartya title="cím1" description="leiras1" />
-      <Kartya title="cím2" description="leiras2" />
-      <Kartya title="cím3" description="leiras3" />
-      <Kartya title="cím4" description="leiras4" />
-    </div>
+      <div className="cards">
+        {favorites.map(favorite => {
+          return (
+              <Kartya key={favorite.id} emoji={favorite.emoji} cim={favorite.cim} leiras={favorite.leiras} />
+          )
+        })}
+      </div>
+    </>
   )
 }
 
