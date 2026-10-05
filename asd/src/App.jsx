@@ -1,0 +1,1 @@
+import card from "./components/card.jsx"
