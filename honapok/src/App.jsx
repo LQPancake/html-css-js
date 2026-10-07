@@ -7,9 +7,9 @@ function App() {
       <main>
         <Header />
         <div id="kartyak">
-          {honapok.map((honap) => {
+          {honapok.map((honap, i) => {
             return (
-              <div className="kartya" id={honap.evszak}>
+              <div className="kartya" key={honap.name} id={i % 3 === 0 ? honap.evszak : ""}>
                 <img src={honap.photoUrl} alt={honap.name + "i kép"} />
                 <h2>{honap.name}</h2>
                 <p>{honap.leiras}</p>
