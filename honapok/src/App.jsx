@@ -1,8 +1,15 @@
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
-import { honapok } from "./components/honapok.js";
+// import { honapok } from "./components/honapok.js";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [honapok, setHonapok] = useState([])
+  useEffect(() => {
+    fetch("https://localhost:3000/api/honapok")
+    .then(res => res.json())
+    .then(datas => setHonapok(datas))
+  }, [])
   return (
       <main>
         <Header />
